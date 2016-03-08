@@ -27,7 +27,7 @@ if (!(@filesize("temp/" . $fname . ".zip") > 0)) {
 	$zip->extractTo("temp/" . $fname);
 	$zip->close();
 }
-$font = array_shift(glob("temp/" . $fname . "/*.ttf"));
+$font = array_shift(glob("temp/" . $fname . "/*.?tf"));
 
 // The text to draw
 $text = $_GET['quote'];
